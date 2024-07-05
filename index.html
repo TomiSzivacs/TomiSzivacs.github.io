@@ -1,38 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        #message {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-        }
-    </style>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<style>
+body {
+    background: rgb(60,0,62);
+    background: -moz-radial-gradient(circle, rgba(60,0,62,1) 35%, rgba(3,3,43,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(60,0,62,1) 35%, rgba(3,3,43,1) 100%);
+    background: radial-gradient(circle, rgba(60,0,62,1) 35%, rgba(3,3,43,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3c003e",endColorstr="#03032b",GradientType=1); 
+}
+
+h1 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+small {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+footer {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.typewriter h3 {
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  color: white;
+  animation: 
+    typing 3.5s steps(40, end);
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+.wrapper {
+  position: absolute;
+  right: 0;}
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
+</style>
 </head>
 <body>
-    <div id="message">HELLO</div>
-    <button onclick="changeMessage()">Click Me</button>
-
-    <script>
-        function changeMessage() {
-            document.getElementById('message').innerText = 'Hi';
-        }
-    </script>
+  <title>TomiSzivacs's web page</title>
+  <meta content="TomiSzivacs's web profile" property="og:title" />
+  <meta content="Some informations about me" property="og:description" />
+  <meta content="https://tomiszivacs.is-a.dev" property="og:url" />
+  <meta content="image.png" property="og:image" />
+  <meta content="#00008b" data-react-helmet="true" name="theme-color" />
+  <h1>TomiSzivacs's web profile <small>:3</small></h1> 
+  <small>:3</small>
+  <div class="typewriter">
+    <h3>
+     hewwo i am TomiSzivacs and i like Android.
+      <br>
+     If you'd like to contact me, you can use the connections below:
+    </h3>
+  </div>
+  <button onclick="openDiscord()" class="button">Discord</button>
+  <button onclick="TWEBBrowser()" class="button">Download TWEBbrowser!</button>
+  <script>
+  function openDiscord() {
+    window.open("https://discord.gg/QW5eWmHq6C");
+  }
+  function TWEBBrowser(){
+    window.open("https://www.mediafire.com/file/4g9zvo6vih75p08/TWebViewer.apk/file");
+  }
+  </script>
+  <div class="wrapper">
+    <iframe id="image" src="image.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+  </div>
 </body>
+<br>
+<br>
+<footer>
+  This site is not done YET. (no cap fr)
+  <br>
+   You can join my Discord server or download my beautiful browser for Android. (pweaseee)
+</footer>
 </html>
