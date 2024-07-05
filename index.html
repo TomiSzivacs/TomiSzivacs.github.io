@@ -13,32 +13,26 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background: linear-gradient(90deg, blue, purple);
-            color: white;
         }
         #message {
             font-size: 2em;
             margin-bottom: 20px;
         }
-        .download-button {
+        button {
             padding: 10px 20px;
             font-size: 1em;
             cursor: pointer;
-            background-color: white;
-            color: black;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
-            text-align: center;
-        }
-        .download-button:hover {
-            background-color: lightgray;
         }
     </style>
 </head>
 <body>
-    <div id="message">Hello World</div>
-    <a class="download-button" href="https://www.mediafire.com/file/4g9zvo6vih75p08/TWebViewer.apk/file" target="_blank">Download TWeb</a>
+    <div id="message">HELLO</div>
+    <button onclick="changeMessage()">Click Me</button>
+
+    <script>
+        function changeMessage() {
+            document.getElementById('message').innerText = 'Hi';
+        }
+    </script>
 </body>
 </html>
